@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TashMini shopping cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                Mini<span>Tash</span>
+            </div>
+            <ul>
+                <li class="active"><i class="fa-solid fa-house-user"></i> Home</li>
+                <li><i class="fa-regular fa-user"></i> User</li>
+                <li><i class="fa-solid fa-heart"></i> Favourite</li>
+            </ul>
+             <ul>
+                <li><i class="fa-brands fa-tiktok"></i> Tiktok</li>
+                <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+                <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+            </ul>
+        </div>
+        <div class="center">
+            <div class="search">
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                    <button>Search</button>
+                </div>
+            </div>
+
+            <h2>CUTE DRINKS</h2>
+            <div class="list">
+                <div class="item" data-key="1">
+                    <div class="img">
+                        <img src="img1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Waterlemon fizz</div>
+                        <div class="des">
+                            It is an unbelievable taste and gives you a amazing spring feeling.
+                            it has a great sparkling taste on your tongue
+                    
+                        </div>
+                        <div class="price">R20.03</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="2">
+                    <div class="img">
+                        <img src="img2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Sip-sensational</div>
+                        <div class="des">
+                            Made with 100% orange and added some sparkling mixer to adhance 
+                             your experience with the taste 
+                        </div>
+                        <div class="price">R20.03</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-key="3">
+                    <div class="img">
+                        <img src="img3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Bubbly delight</div>
+                        <div class="des">
+                            Why not use berries to quinch your thirst?
+                             one of new freshly made drinks 
+                        </div>
+                        <div class="price">R20.03</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+                
+                <div class="item" data-key="4">
+                    <div class="img">
+                        <img src="img4.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">Island drink</div>
+                        <div class="des">
+                            summer drinks at its  best giving a feeling of being in a island
+                             enjoying your summer vacation
+                        </div>
+                        <div class="price">R20.03</div>
+                        <input type="number" class="count" min="1" value="1">
+                        <button class="add">Add to cart</button>
+                        <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="cart">
+            <div class="name">CART</div>
+            <div class="listCart">
+                <div class="cart-total">
+                    <div class="cart-total-title"><strong><h2>Total</h2></strong></div>
+                    <span class="cart-total-price"><strong><h2>R0.00</h2></strong></span>
+                </div> 
+                <button class="btn" type="button">PURCHASE</button>
+
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
